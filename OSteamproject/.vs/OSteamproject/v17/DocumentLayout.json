@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ROG Zephyrus G15\\source\\repos\\OSteamproject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{39B0F793-25D2-4B2F-93CC-9F3159D9C47D}|OSteamproject.pyproj|C:\\Users\\ROG Zephyrus G15\\source\\repos\\OSteamproject\\scheduler.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{39B0F793-25D2-4B2F-93CC-9F3159D9C47D}|OSteamproject.pyproj|solutionrelative:scheduler.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B0F793-25D2-4B2F-93CC-9F3159D9C47D}|OSteamproject.pyproj|C:\\Users\\ROG Zephyrus G15\\source\\repos\\OSteamproject\\fcfs.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{39B0F793-25D2-4B2F-93CC-9F3159D9C47D}|OSteamproject.pyproj|solutionrelative:fcfs.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B0F793-25D2-4B2F-93CC-9F3159D9C47D}|OSteamproject.pyproj|C:\\Users\\ROG Zephyrus G15\\source\\repos\\OSteamproject\\cpu.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{39B0F793-25D2-4B2F-93CC-9F3159D9C47D}|OSteamproject.pyproj|solutionrelative:cpu.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "scheduler.py",
+              "DocumentMoniker": "C:\\Users\\ROG Zephyrus G15\\source\\repos\\OSteamproject\\scheduler.py",
+              "RelativeDocumentMoniker": "scheduler.py",
+              "ToolTip": "C:\\Users\\ROG Zephyrus G15\\source\\repos\\OSteamproject\\scheduler.py",
+              "RelativeToolTip": "scheduler.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAASAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEVSURBVDhPrZOhboRAEIaHhqQIJAKJQCAQCB4AXR4EiUAgkUhwGCSCF2h4AAwOCQkCiUQgqGgy3Z2Uy3FHL\u002Blxf/Jnl5n8HzsbEL6/PhCelPj\u002BCfALeMo8\u002B8Y2p7QDjONIrusafN\u002BnmiiK4LouVFUFXddBlmWgKAr1uHYATdOgLEvo\u002Bx7SNAXHcSCOYyiKApqmgTzPwbZtgl50fQdcLISGYeC6ruh5Hs7zjEmS7GbfTNlbwDRNuCwLrZIk0RqG4S64\u002BRAQBAGdgh2TamwEHIYBLctCXdcxiiKUZflvALuHyzO3qqrYti31uDiMg3jvDsDD25tvbZom\u002Bbp2B/ivefa1HxIb8dCPtAMIgnDoRzo9wqnfGQDgB6iaAPhrbB0nAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-07-13T07:26:11.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "fcfs.py",
+              "DocumentMoniker": "C:\\Users\\ROG Zephyrus G15\\source\\repos\\OSteamproject\\fcfs.py",
+              "RelativeDocumentMoniker": "fcfs.py",
+              "ToolTip": "C:\\Users\\ROG Zephyrus G15\\source\\repos\\OSteamproject\\fcfs.py",
+              "RelativeToolTip": "fcfs.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEVSURBVDhPrZOhboRAEIaHhqQIJAKJQCAQCB4AXR4EiUAgkUhwGCSCF2h4AAwOCQkCiUQgqGgy3Z2Uy3FHL\u002Blxf/Jnl5n8HzsbEL6/PhCelPj\u002BCfALeMo8\u002B8Y2p7QDjONIrusafN\u002BnmiiK4LouVFUFXddBlmWgKAr1uHYATdOgLEvo\u002Bx7SNAXHcSCOYyiKApqmgTzPwbZtgl50fQdcLISGYeC6ruh5Hs7zjEmS7GbfTNlbwDRNuCwLrZIk0RqG4S64\u002BRAQBAGdgh2TamwEHIYBLctCXdcxiiKUZflvALuHyzO3qqrYti31uDiMg3jvDsDD25tvbZom\u002Bbp2B/ivefa1HxIb8dCPtAMIgnDoRzo9wqnfGQDgB6iaAPhrbB0nAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-07-13T07:26:07.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "cpu.py",
+              "DocumentMoniker": "C:\\Users\\ROG Zephyrus G15\\source\\repos\\OSteamproject\\cpu.py",
+              "RelativeDocumentMoniker": "cpu.py",
+              "ToolTip": "C:\\Users\\ROG Zephyrus G15\\source\\repos\\OSteamproject\\cpu.py",
+              "RelativeToolTip": "cpu.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEVSURBVDhPrZOhboRAEIaHhqQIJAKJQCAQCB4AXR4EiUAgkUhwGCSCF2h4AAwOCQkCiUQgqGgy3Z2Uy3FHL\u002Blxf/Jnl5n8HzsbEL6/PhCelPj\u002BCfALeMo8\u002B8Y2p7QDjONIrusafN\u002BnmiiK4LouVFUFXddBlmWgKAr1uHYATdOgLEvo\u002Bx7SNAXHcSCOYyiKApqmgTzPwbZtgl50fQdcLISGYeC6ruh5Hs7zjEmS7GbfTNlbwDRNuCwLrZIk0RqG4S64\u002BRAQBAGdgh2TamwEHIYBLctCXdcxiiKUZflvALuHyzO3qqrYti31uDiMg3jvDsDD25tvbZom\u002Bbp2B/ivefa1HxIb8dCPtAMIgnDoRzo9wqnfGQDgB6iaAPhrbB0nAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-07-13T07:26:04.36Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
