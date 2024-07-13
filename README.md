@@ -47,3 +47,8 @@ Run the show.py file to start the simulator:
 
  ```bash
 python show.py
+```
+OR
+
+### You can use the ```show.exe``` file in 'dist' directory
+
