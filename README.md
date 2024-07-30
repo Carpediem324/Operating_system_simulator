@@ -1,4 +1,4 @@
-# Operating System Simulator
+# Operating System Simulator (프로세스 스케쥴링)
 
 ## os_process_simulator
 **by Shin Hyeonhak**
