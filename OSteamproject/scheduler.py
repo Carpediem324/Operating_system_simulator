@@ -4,6 +4,8 @@ from cpu import CPU
 
 class Scheduler(metaclass=ABCMeta):
     def __init__(self, process_input_list, cpu_count):
+        if cpu_count <= 0:
+            raise ValueError("cpu_count must be greater than 0.")
         self.process_count = len(process_input_list)
         self.processes = process_input_list
         self.cpu_count = cpu_count
@@ -27,8 +29,14 @@ class Scheduler(metaclass=ABCMeta):
     def work(self):
         for cpu in self.cpus:
             if not cpu.is_idle():
-                cpu.process.remain_bt -= 1
+                cpu.process.remain_bt = max(0, cpu.process.remain_bt - 1)
                 cpu.work_time += 1
+
+    def enqueue_arrived_processes(self, sorted_processes, at_idx, cur_time):
+        while at_idx < self.process_count and sorted_processes[at_idx].at <= cur_time:
+            self.ready_queue.append(sorted_processes[at_idx])
+            at_idx += 1
+        return at_idx
 
     # 쉬게되는 CPU 개수 - 레디큐 프로세스 개수 만큼
     # 일이 끝나도 그 프로세스는 빼지 않는다.

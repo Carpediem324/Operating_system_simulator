@@ -3,6 +3,8 @@ from scheduler import Scheduler
 
 class RR(Scheduler):
     def __init__(self, process_input_list, cpu_count, quantum):
+        if quantum <= 0:
+            raise ValueError("quantum must be greater than 0.")
         super().__init__(process_input_list, cpu_count)
         self.quantum = quantum
 
@@ -14,14 +16,7 @@ class RR(Scheduler):
         # 끝난 프로세스가 총 프로세스의 수와 같아질때까지 작동
         while finish_processes_count < self.process_count:
             # 현재 시간에 도착할 프로세스 대기열 큐에 넣어주기
-            for process_idx in range(at_idx, self.process_count):
-                process = sorted_processes[process_idx]
-                if process.at == cur_time:
-                    print("processe arrived - cur_time:", cur_time, " p_id :", process.id)
-                    self.ready_queue.append(process)
-                elif process.at > cur_time:
-                    at_idx = process_idx
-                    break
+            at_idx = self.enqueue_arrived_processes(sorted_processes, at_idx, cur_time)
 
             # history 기록하기
             self.record_history(self.ready_queue[:], self.cpus, self.processes)

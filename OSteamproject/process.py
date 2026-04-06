@@ -1,5 +1,10 @@
 class Process:
     def __init__(self, id, at, bt, color_idx):
+        if bt < 0:
+            raise ValueError("Burst time(bt) must be >= 0.")
+        if at < 0:
+            raise ValueError("Arrival time(at) must be >= 0.")
+
         self.id = id
         self.at = at  # arrival time
         self.bt = bt  # burst time
@@ -28,10 +33,13 @@ class Process:
             [105, 255, 238],
             [255, 105, 180]
         ]
-        self.color = self.color_palette[color_idx]
+        self.color = self.color_palette[color_idx % len(self.color_palette)]
 
     def calculate_finished_process(self, cur_time) -> int:
         self.tt = cur_time - self.at
         if self.bt > 0:
             self.wt = self.tt - self.bt
             self.ntt = self.tt / self.bt
+        else:
+            self.wt = self.tt
+            self.ntt = 0

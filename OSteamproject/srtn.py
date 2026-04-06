@@ -10,16 +10,7 @@ class SRTN(Scheduler):
         sorted_processes = sorted(self.processes, key=lambda x: x.at)
 
         while finished_processes_count < self.process_count:
-            for process_idx in range(at_idx, self.process_count):
-                process = sorted_processes[process_idx]
-
-                if process.at == cur_time:
-                    print("process arrived - cur_time: ", cur_time, "p_id: ", process.id)
-                    self.ready_queue.append(process)
-
-                elif process.at > cur_time:
-                    at_idx = process_idx
-                    break
+            at_idx = self.enqueue_arrived_processes(sorted_processes, at_idx, cur_time)
 
             # history 기록하기
             self.record_history(self.ready_queue[:], self.cpus, self.processes)
@@ -40,11 +31,12 @@ class SRTN(Scheduler):
                         cpu.process = next_process
 
             if self.ready_queue:  # ready_queue가 있으면 그 후 비교
-                # cpu 리스트 생성
-                cpu_list = []
-                for cpu in self.cpus:
-                    cpu_list.append(cpu)
-
+                # 현재 실행중인 cpu만 비교(유휴 cpu는 process가 None이므로 제외)
+                cpu_list = [cpu for cpu in self.cpus if not cpu.is_idle()]
+                if not cpu_list:
+                    cur_time += 1
+                    super().work()
+                    continue
                 cpu_list.sort(key=lambda x: x.process.remain_bt)  # 오름차순으로 정렬 (+한번만해도 괜찮을듯)
 
                 max_idx = min(self.cpu_count, len(self.ready_queue))  # 인덱스 에러 안 뜨게
