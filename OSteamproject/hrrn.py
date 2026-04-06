@@ -9,14 +9,7 @@ class HRRN(Scheduler):
         sorted_processes = sorted(self.processes, key=lambda x: x.at)
         while finish_processes_count < self.process_count:
             # 현재 시간과 AT가 일치하는 프로세스를 대기열 큐에 넣어주기
-            for process_idx in range(at_idx, self.process_count):
-                process = sorted_processes[process_idx]
-                if process.at == cur_time:
-                    print("process arrived - cur_time:", cur_time, " p_id :", process.id)
-                    self.ready_queue.append(process)
-                elif process.at > cur_time:  # 더이상 검사할 필요가 없으므로 종료
-                    at_idx = process_idx
-                    break
+            at_idx = self.enqueue_arrived_processes(sorted_processes, at_idx, cur_time)
 
             # history 기록하기
             self.record_history(self.ready_queue[:], self.cpus, self.processes)

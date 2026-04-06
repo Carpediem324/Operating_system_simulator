@@ -18,6 +18,6 @@ class CPU:
         if not self.is_idle():
             if self.process.remain_bt == 0:
                 return True
-            if self.work_time == quantum:
+            if quantum > 0 and self.work_time >= quantum:
                 return True
         return False
